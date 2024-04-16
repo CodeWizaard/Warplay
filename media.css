@@ -1,5 +1,7 @@
 @media (max-width: 1230px) {
-
+    .container{
+        display: none;
+    }
     /* техническая скция */
     .sechnical_section {
         display: flexbox;
