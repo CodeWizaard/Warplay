@@ -1,0 +1,148 @@
+@media (max-width: 1230px) {
+
+    /* техническая скция */
+    .sechnical_section {
+        display: flexbox;
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+    }
+
+    .block_photo_server {
+        width: 80vw;
+        margin-bottom: 100px;
+        border-radius: 10px 5% / 20px 25em 30px 35em;
+    }
+
+    .description_photo_server {
+        width: 80vw;
+        align-items: center;
+        float: inline-start;
+
+
+    }
+
+    .description_photo_server * {
+        justify-content: center;
+        /* Центрирование по горизонтали */
+        align-items: center;
+        text-align: center;
+    }
+
+    /* секция тарифов */
+
+    .section_description_tariffs {}
+
+    .block_description_tariffs {
+        display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+        /* Центрирование по горизонтали */
+        align-items: center;
+        text-align: center;
+    }
+
+    .description_tariff {
+        display: flexbox;
+        align-items: center;
+        height: 96vw;
+        width: 64vw;
+        margin-bottom: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .description_tariff:hover {
+        background-color: #00C5FF;
+        height: 86vw;
+        width: 74vw;
+        transition: all 1s;
+    }
+
+    .description_tariff h1 {
+        margin-left: 3vw;
+        margin-right: auto;
+        font-size: 8vw;
+        text-align: left;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .description_tariff h3 {
+        margin-left: 3vw;
+        margin-right: auto;
+        text-align: left;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+
+    .description_tariff h5 {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        margin-left: 3vw;
+        margin-right: auto;
+        text-align: left;
+        font-size: 4vw;
+
+    }
+
+    .btn_tariff {
+        margin-top: auto;
+        margin-bottom: 6vw;
+        align-self: flex-end;
+        font-size: 3vw;
+        width: 85%;
+        height: 10%;
+    }
+
+
+    .section_divider {
+        height: 20vw;
+        flex-direction: column;
+        margin-top: 15vw;
+        margin-bottom: 15vw;
+    }
+
+    .section_divider h1 {
+
+        font-size: 8vw;
+       
+
+
+    }
+
+    .divider_block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vw;
+    }
+
+    .divider_block h5 {
+
+        font-style: normal;
+        font-size: 5vw;
+        font-family: "Oswald", sans-serif;
+        font-weight: 400;
+        color: #57D6FF;
+    }
+
+
+    .section_information_devices {
+        display: flex;
+        display: flexbox;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 200vw;
+    }
+    .description_information_devices {
+        background-color: rgba(20, 28, 36, 1);
+        width: 100%;
+    }
+    .pictures_information_devices {
+        width: 50%;
+    height: 60vw;
+    }
+}
