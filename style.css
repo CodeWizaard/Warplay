@@ -8,8 +8,6 @@
 
 * {
     box-sizing: border-box;
-
-
 }
 
 body {
@@ -22,7 +20,6 @@ body {
 a {
     color: #fff;
     text-decoration: none;
-
 }
 
 ul {
@@ -54,7 +51,6 @@ h6 {
 }
 
 .header {
-    display: flex;
     position: relative;
     z-index: 1;
     padding: 25px;
