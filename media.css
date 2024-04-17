@@ -71,7 +71,9 @@
    }
 
 @media (max-width: 1230px) {
-    
+    .header_desktop{
+        display: none;
+    }
     /* техническая скция */
     .sechnical_section {
         display: flexbox;
@@ -136,15 +138,24 @@
         display: flexbox;
         flex-direction: column-reverse;
         align-items: center;
-        height: 200vw;
+        height: 100%;
+        width: 100vw;
     }
     .description_information_devices {
         background-color: rgba(20, 28, 36, 1);
         width: 100%;
     }
     .pictures_information_devices {
-        width: 50%;
-    height: 60vw;
+        width: 60vw;
+        height: 60vw;
     }
+    .block_pictures_information_devices {
+        background-color: rgba(20, 28, 36, 1);
+        width: 100%;
+        height: 60vw;
+        display: flex;
+        z-index: 0;
+    }
+
 }
 
