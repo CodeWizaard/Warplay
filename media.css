@@ -186,6 +186,9 @@
         flex-direction: column;
         justify-content: center;
     }
+    .description_information_devices{
+        margin-left: 0px;
+    }
 }
 
 
