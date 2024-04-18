@@ -156,6 +156,24 @@
         display: flex;
         z-index: 0;
     }
+    .desktop_pictures_information_devices{
+        display: none;
+    }   
+.footer container{
+    display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+}
+}
 
+
+@media (min-width: 1230px) and (max-width: 4500px) {
+ 
+    .mobile_pictures_information_devices{
+        display: none;
+    }
+    .header_mobile{
+        display: none;
+    }
 }
 
