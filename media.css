@@ -114,7 +114,7 @@
     }
 
     .section_divider h1 {
-        font-size: 6vw;
+        font-size: 30px;
     }
 
     .divider_block {
@@ -158,6 +158,7 @@
 
     .description_information_devices h1 {
         text-align: center;
+        font-size: 30px;
     }
 
     .description_information_devices h4 {
@@ -189,6 +190,7 @@
     .description_information_devices{
         margin-left: 0px;
     }
+ 
 }
 
 

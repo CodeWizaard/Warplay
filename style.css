@@ -8,6 +8,7 @@
 
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background-color: #1c1c1c;
     color: #fff;
     margin: 0px;
+
 }
 
 a {
@@ -81,7 +83,8 @@ h6 {
     size: 100vw;
     align-items: center;
 }
-.logo_block_mobile a{
+
+.logo_block_mobile a {
     width: 40vw;
     align-items: center;
     display: inline;
@@ -345,7 +348,7 @@ h6 {
     justify-content: center;
     align-items: center;
     font-weight: 500;
-
+    
 }
 
 .section_divider h1 {
@@ -499,7 +502,8 @@ h6 {
 
 
 .description_information_devices {
-margin-left: 10%;
+    margin-left: 10%;
+
 }
 
 
@@ -514,7 +518,6 @@ margin-left: 10%;
     width: 100%;
 }
 
-
 .block_pictures_information_devices {
     background-color: rgba(20, 28, 36, 1);
     width: 100%;
@@ -523,17 +526,22 @@ margin-left: 10%;
     justify-content: flex-end;
     margin-top: -15vw;
     z-index: 0;
+    
 }
 
 .desktop_pictures_information_devices img {
     display: flex;
+    
 }
 
 .mobile_pictures_information_devices {
     width: 100vw;
     height: 66vw;
     margin: auto auto;
+    overflow: hidden; /* Обрезает все, что выходит за пределы элемента */
+
 }
+
 
 
 
