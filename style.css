@@ -47,14 +47,14 @@ h6 {
     align-items: center;
     align-content: center;
 }
+
 .header_mobile {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 80%;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
+    margin: auto auto;
 }
 
 .headers {
@@ -64,6 +64,7 @@ h6 {
     opacity: 1;
     background-color: rgba(20, 28, 36, 0.8);
     transition: all 2s;
+    margin: auto auto;
 }
 
 .header:hover {
@@ -74,6 +75,16 @@ h6 {
 .header_logo {
     max-width: 70px;
     max-height: 70px;
+}
+
+.logo_block_mobile {
+    size: 100vw;
+    align-items: center;
+}
+.logo_block_mobile a{
+    width: 40vw;
+    align-items: center;
+    display: inline;
 }
 
 .header_nav a {
@@ -496,7 +507,7 @@ h6 {
     display: flex;
     justify-content: left;
     align-items: center;
-    height:8vw;
+    height: 8vw;
     background-color: rgba(20, 28, 36, 1);
     width: 100%;
 }
@@ -515,9 +526,10 @@ h6 {
 .desktop_pictures_information_devices img {
     display: flex;
 }
-.mobile_pictures_information_devices{
-    width: 95vw;
-    height:427px;
+
+.mobile_pictures_information_devices {
+    width: 100vw;
+    height: 66vw;
     margin: auto auto;
 }
 

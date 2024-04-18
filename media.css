@@ -1,9 +1,9 @@
 @media (min-width: 0px) and (max-width: 1100px) {
 
     /* секция тарифов */
-   
+
     .section_description_tariffs {}
-   
+
     .block_description_tariffs {
         display: flexbox;
         flex-direction: column;
@@ -12,7 +12,7 @@
         align-items: center;
         text-align: center;
     }
-   
+
     .description_tariff {
         display: flexbox;
         align-items: center;
@@ -22,15 +22,15 @@
         display: flex;
         flex-direction: column;
     }
-   
-   
+
+
     .description_tariff:hover {
         background-color: #00C5FF;
         height: 86vw;
         width: 74vw;
         transition: all 1s;
     }
-   
+
     .description_tariff h1 {
         margin-left: 3vw;
         margin-right: auto;
@@ -39,7 +39,7 @@
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
-   
+
     .description_tariff h3 {
         margin-left: 3vw;
         margin-right: auto;
@@ -48,7 +48,7 @@
         margin-bottom: 2vw;
         font-size: 4vw;
     }
-   
+
     .description_tariff h5 {
         margin-top: 5vw;
         margin-bottom: 5vw;
@@ -56,9 +56,9 @@
         margin-right: auto;
         text-align: left;
         font-size: 4vw;
-   
+
     }
-   
+
     .btn_tariff {
         margin-top: auto;
         margin-bottom: 6vw;
@@ -67,13 +67,14 @@
         width: 85%;
         height: 10%;
     }
-   
-   }
+
+}
 
 @media (max-width: 1230px) {
-    .header_desktop{
+    .header_desktop {
         display: none;
     }
+
     /* техническая скция */
     .sechnical_section {
         display: flexbox;
@@ -103,7 +104,7 @@
         text-align: center;
     }
 
-   
+
 
     .section_divider {
         height: 20vw;
@@ -141,14 +142,33 @@
         height: 100%;
         width: 100vw;
     }
+
     .description_information_devices {
         background-color: rgba(20, 28, 36, 1);
         width: 100%;
+        justify-content: center;
+
     }
+
+    .description_information_devices .divider_block {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description_information_devices h1 {
+        text-align: center;
+    }
+
+    .description_information_devices h4 {
+        text-align: center;
+    }
+
     .pictures_information_devices {
         width: 60vw;
         height: 60vw;
     }
+
     .block_pictures_information_devices {
         background-color: rgba(20, 28, 36, 1);
         width: 100%;
@@ -156,24 +176,26 @@
         display: flex;
         z-index: 0;
     }
-    .desktop_pictures_information_devices{
+
+    .desktop_pictures_information_devices {
         display: none;
-    }   
-.footer container{
-    display: flexbox;
+    }
+
+    .footer container {
+        display: flexbox;
         flex-direction: column;
         justify-content: center;
-}
+    }
 }
 
 
 @media (min-width: 1230px) and (max-width: 4500px) {
- 
-    .mobile_pictures_information_devices{
+
+    .mobile_pictures_information_devices {
         display: none;
     }
-    .header_mobile{
+
+    .header_mobile {
         display: none;
     }
 }
-
