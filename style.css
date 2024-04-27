@@ -538,7 +538,7 @@ h6 {
     width: 100vw;
     height: 66vw;
     margin: auto auto;
-    overflow: hidden; /* Обрезает все, что выходит за пределы элемента */
+    overflow: hidden; /* Обрезает вѝе, что выходит за пределы ѝлемента */
 
 }
 
@@ -566,30 +566,6 @@ h6 {
     background-color: rgba(20, 28, 36, 0.8);
     transition: all 2s;
     background: #000;
-    height: 4vw;
-}
-
-.footer h1 {
-    margin-left: 5vw;
-    font-size: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer_info h5 {
-    margin-left: auto;
-    font-size: 1vw;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-right: 6vw;
-}
-
-.footer_info {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-right: 0px;
-    margin-left: auto;
+    height: auto;
+    
 }
