@@ -1,19 +1,17 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const port = 3000;
 const mongoose = require('mongoose');
 
-mongoose.connect 
-// Коннект к базе данных
-const myFunction = require('.backend\db.js');
-
-const { MongoClient } = require('mongodb');
-const uri = 'mongodb://localhost:27017/warplay'; // URI подключения к вашей MongoDB
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-const Cat = mongoose.model('Cat', { name: String });
 
 
-
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Подключение к MongoDB успешно установлено'))
+  .catch((err) => console.error('Ошибка подключения к MongoDB:', err));
+const db = mongoose.connection
+db.on('error',(error)=>console.error(error))
+db.once('open',()=>console.log('Connected to databace'))
 
 // Обработчик для маршрута /news
 app.get('/news', (req, res) => {
