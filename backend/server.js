@@ -11,12 +11,11 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTo
   .catch((err) => console.error('Ошибка подключения к MongoDB:', err));
 const db = mongoose.connection
 db.on('error',(error)=>console.error(error))
-db.once('open',()=>console.log('Connected to databace'))
+db.once('open',()=>console.log('Connected to databace'));
 
-// Обработчик для маршрута /news
-app.get('/news', (req, res) => {
-    res.json(newsDB);
-});
+app.use(express.json());
+const newsRouter = require('./routes/news');
+app.use('/news', newsRouter);
 
 // Запускаем сервер
 app.listen(port, () => {
