@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 /frontend/
 !/frontend/index.html
 * text=auto
+=======
+# Auto detect text files and perform LF normalization
+* text=auto
+>>>>>>> parent of 9a45a28 (Fix git index.html)

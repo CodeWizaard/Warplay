@@ -17,20 +17,20 @@
         <a href="index.html"><img class="logo_club" src="./Images/Logo.png" alt="Логотип" class="header_logo"></a>
         <a class="name_club" href="Index.html"><img class="name_club" src="./Images/NameClube.png" alt="Логотип"
             class="header_logo"></a>
-      </div>
-      <nav class="header_nav">
-        <ul class="header_list">
-          <li><a href="index.html">Главнаѝ</a></li>
-          <li><a class="active" href="index.html">Сервера</a></li>
-          <li><a href="#!">Скачать</a></li>
-          <li><a href="#!">Цены</a></li>
-          <li><a href="#!">Поддержка</a></li>
-        </ul>
-      </nav>
-      <div class="Authorization">
-        <ul class="header_list">
-          <a href="#!">Вход</a>
-          <a href="#!">Авторизация</a>
+        </div>
+        <nav class="header_nav">
+          <ul class="header_list">
+                <li><a  href="index.html">Главнаѝ</a></li>
+                <li><a class="active" href="index.html">Сервера</a></li>
+                <li><a href="#!">Скачать</a></li>
+                <li><a href="#!">Цены</a></li>
+                <li><a href="#!">Поддержка</a></li>
+              </ul>
+            </nav>
+            <div class="Authorization">
+              <ul class="header_list">
+                <a href="#!">Вход</a>
+              <a href="#!">Авторизация</a>
         </ul>
       </div>
     </div>
@@ -39,8 +39,8 @@
         <a href="index.html"><img class="logo_club" src="./Images/Logo.png" alt="Логотип" class="header_logo"></a>
         <a class="name_club" href="Index.html"><img class="name_club" src="./Images/NameClube.png" alt="Логотип"
             class="header_logo"></a>
+        </div>
       </div>
-    </div>
     </div>
   </header>
   <main class="main">
@@ -59,48 +59,22 @@
       </div>
     </section>
 
-
-    <div id="content"></div>
+   
+    <div id="content"></div> 
     <script>
-          async function fetchData() {
-    try {
-      const response = await fetch('http://localhost:3000/servers');
-      const data = await response.json();
-    
-      // Данные успешно получены, теперь можно использовать переменную data
-      console.log(data);
-    
-      // Вернуть данные из функции, если это нужно
-      return data;
-    } catch (error) {
-      console.error('Ошибка:', error);
-    }
-  }
-
-// Вызов функции и использование ее результата
-fetchData().then(data => {
-  // Данные доступны внутри этой функции
-  console.log('Данные получены:', data);
-});
-
-      
-        var serversData = fetch('http://localhost:3000/servers') // Отправка GET-запроса на сервер
+      fetch('http://localhost:3000/servers') // Отправка GET-запроса на сервер
         .then(response => response.json())
         .then(data => {
           // Обновление содержимого веб-страницы с использованием данных из API
           document.getElementById('content').textContent = data.someProperty;
         })
         .catch(error => console.error('Ошибка при получении данных:', error));
-    
-        console.log(serversData);
-        console.log(serversData[0]);
-        console.log(serversData[1]);
     </script>
+   
 
-
-
+ 
     <footer class="footer">
-
+     
     </footer>
 
 
