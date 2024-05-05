@@ -5,4 +5,7 @@
 =======
 # Auto detect text files and perform LF normalization
 * text=auto
+<<<<<<< HEAD
+>>>>>>> parent of 9a45a28 (Fix git index.html)
+=======
 >>>>>>> parent of 9a45a28 (Fix git index.html)
