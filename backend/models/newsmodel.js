@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
-
-const newsSchema = new mongoose.Schema({
+const NewsRouterSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -12,5 +11,5 @@ const newsSchema = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('news', newsSchema);
+module.exports = mongoose.model('news', NewsRouterSchema);
 //news название коллекции где хранятся данные
