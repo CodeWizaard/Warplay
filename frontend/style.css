@@ -572,6 +572,23 @@ h6 {
 margin: auto auto;
 }
 .block_server{
-    display: flex;
-  
-    }
+    
+}
+.card_server{
+
+    background-color: #00C5FF; /* Цвет фона */
+    border-radius: 20px; /* Скругление углов в виде эллипса */
+    
+}
+.name_server{
+
+
+}
+.max_users_server{
+
+
+}
+.location_server{
+
+
+}

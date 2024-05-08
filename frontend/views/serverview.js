@@ -23,16 +23,33 @@ function create_card(data) {
     for (let indexData in data) {
       if (data.hasOwnProperty(indexData)) {
           let newDiv = document.createElement('div');
-          create_subsystem_card(newDiv, indexData); // Добавляем новый div в основной контейнер
+          newDiv.classList.add('card_server'); // Выводим ключ и значение свойства
+          myDiv.appendChild(newDiv);
+          create_server_name(newDiv, indexData); 
+          create_max_users(newDiv, indexData);
+          create_location(newDiv, indexData);// Добавляем новый div в основной контейнер
       }
       console.log('Создание карточки №'+ data[indexData]);
   }
 
-    function create_subsystem_card(newDiv, indexData) {
+    function create_server_name(newDiv, indexData) {
         let divServerName = document.createElement('div');
-        divServerName.textContent = indexData + ': ' + data[indexData].serverName;
-        divServerName.classList.add('card_server'); // Выводим ключ и значение свойства
-        myDiv.appendChild(divServerName);
+        divServerName.textContent =  ': ' + data[indexData].serverName;
+        divServerName.classList.add('name_server'); // Выводим ключ и значение свойства
+        newDiv.appendChild(divServerName);
+        
+    }
+    function create_max_users(newDiv, indexData) {
+        let divServerName = document.createElement('div');
+        divServerName.textContent =  ': ' + data[indexData].maxUsers;
+        divServerName.classList.add('max_users_server'); // Выводим ключ и значение свойства
+        newDiv.appendChild(divServerName);
+    }
+    function create_location(newDiv, indexData) {
+        let divServerName = document.createElement('div');
+        divServerName.textContent =  ': ' + data[indexData].location;
+        divServerName.classList.add('location_server'); // Выводим ключ и значение свойства
+        newDiv.appendChild(divServerName);
     }
 }
 
