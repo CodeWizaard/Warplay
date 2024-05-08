@@ -567,3 +567,11 @@ h6 {
     height: auto;
     
 }
+.card_server{
+
+margin: auto auto;
+}
+.block_server{
+    display: flex;
+  
+    }
