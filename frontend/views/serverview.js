@@ -34,20 +34,20 @@ function create_card(data) {
 
     function create_server_name(newDiv, indexData) {
         let divServerName = document.createElement('div');
-        divServerName.textContent =  ': ' + data[indexData].serverName;
+        divServerName.textContent = data[indexData].serverName;
         divServerName.classList.add('name_server'); // Выводим ключ и значение свойства
         newDiv.appendChild(divServerName);
         
     }
     function create_max_users(newDiv, indexData) {
         let divServerName = document.createElement('div');
-        divServerName.textContent =  ': ' + data[indexData].maxUsers;
+        divServerName.textContent =   data[indexData].maxUsers;
         divServerName.classList.add('max_users_server'); // Выводим ключ и значение свойства
         newDiv.appendChild(divServerName);
     }
     function create_location(newDiv, indexData) {
         let divServerName = document.createElement('div');
-        divServerName.textContent =  ': ' + data[indexData].location;
+        divServerName.textContent =   data[indexData].location;
         divServerName.classList.add('location_server'); // Выводим ключ и значение свойства
         newDiv.appendChild(divServerName);
     }

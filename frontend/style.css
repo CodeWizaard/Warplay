@@ -572,16 +572,24 @@ h6 {
 margin: auto auto;
 }
 .block_server{
-    
+    display: inline;
+    width: 100%;
+    margin: auto auto;
+    align-items: center;
+    text-align: center;
 }
 .card_server{
+size: 300px 300px;
+    background-color: #1c1c1c; /* Цвет фона */
+    border-color: #1c1c1c;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 10px #57D6FF;
+    margin: 10vw 10vw;
+    font-size: 5vw;
 
-    background-color: #00C5FF; /* Цвет фона */
-    border-radius: 20px; /* Скругление углов в виде эллипса */
-    
 }
 .name_server{
-
+text: 30px;
 
 }
 .max_users_server{
